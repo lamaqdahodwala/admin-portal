@@ -14,7 +14,7 @@ function grab(){
 		}
 		console.log(str)
 		var map = new Map(Object.entries(JSON.parse(str)))
-		if (map == {}){
+		if (str == "{}"){
             alert('No one is registered.')
             return;
         }
