@@ -15,9 +15,23 @@ function grab(){
 		console.log(str)
 		var map = new Map(Object.entries(JSON.parse(str)))
 		console.log(map)
+		let old_body = document.getElementById('table')
+		old_body.innerHTML = ''
+		
 		for (var i of map.entries()){
-			console.log(i)
+			let row = document.createElement('TR');
+			let name = document.createElement('TD');
+			name.innerHTML = i[0]
+			let online = document.createElement('TD');
+			online.innerHTML = i[1]
+			row.appendChild(name)
+			row.appendChild(online)
+			old_body.appendChild(row)
+
 		}
+		
+
+
 
 		
 	}
