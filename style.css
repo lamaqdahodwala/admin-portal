@@ -6,4 +6,15 @@ table {
 
 th, td, tr {
     border: 3px groove;
+    background: rgb(201, 198, 198);
+    font-family:'Times New Roman', Times, serif;
+    text-align: left;
+    padding: 2px;
+    
+}
+
+
+
+body {
+    background-color: rgb(71, 71, 71);
 }
