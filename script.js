@@ -14,7 +14,11 @@ function grab(){
 		}
 		console.log(str)
 		var map = new Map(Object.entries(JSON.parse(str)))
-		console.log(map)
+		if (map == {}){
+            alert('No one is registered.')
+            return;
+        }
+
 		let old_body = document.getElementById('table')
 		old_body.innerHTML = ''
 		
