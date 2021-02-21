@@ -41,6 +41,7 @@ function grab(){
 	}
 	let fetched = fetch('https://mod-server.lamaqdahodwala.repl.co/everyone')
 		.then(response => response.text())
-		.then(alert('Hold on, loading!'))
 		.then(data => createtable(data))
 }
+
+setInterval(grab, 500)
